@@ -1,0 +1,14 @@
+{
+  "name": "innformant",
+  // The order of the files is important since later files override previous ones
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "development",
+  "workspaceFolder": "/workspace/innformant",
+  "shutdownAction": "stopCompose",
+  "extensions": [
+    "eamodio.gitlens",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "esbenp.prettier-vscode"
+  ]
+}

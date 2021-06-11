@@ -1,0 +1,20 @@
+name: iNNformant
+channels:
+  - conda-forge
+dependencies:
+  - python==3.8.0
+  - pip
+  - cudatoolkit=10.1.168
+  - cudnn=7.6.5
+  - pip:
+      - fabric
+      - tensorflow-gpu==2.3.0
+      - tensorflow-datasets
+      - numpy
+      - matplotlib
+      - tables
+      - jinja2
+      - prettytable
+      - pandas
+      - joblib
+      - google-cloud-storage

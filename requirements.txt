@@ -1,0 +1,15 @@
+# this is just here for people that don't use the docker
+tensorflow
+
+# the list of additional development requirements (vm requirements are already installed)
+numpy
+prettytable
+pandas
+joblib
+
+# additional development niceties
+autopep8
+pdbpp
+jupyter
+jupyterlab
+matplotlib

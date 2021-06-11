@@ -1,0 +1,14 @@
+**__pycache__
+inputs/*.npy
+datasets/*
+**.pyc
+.idea
+*.log
+credentials
+.vscode
+**.ipynb*
+gradients
+development.env
+**Zone.Identifier
+**.tex
+docker-compose.yml

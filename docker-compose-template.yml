@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  development:
+    build: .
+    tty: true
+    working_dir: /workspace/innformant
+    ports:
+      - "8888:8888"
+    volumes:
+      - "WHERE_YOU_WANT_TO_STORE_YOUR_DATASETS:/datasets"
+      - "WHERE_YOU_STORE_YOUR_SSH_KEYS:/home/dev/.ssh"
+      - "cloud_config:/credentials"
+      - ".:/workspace/innformant"
+    environment:
+      - HOSTNAME=A_HOSTNAME_THAT_DESCRIBES_YOUR_CPU
+      - SSH_USERNAME=THE_USERNAME_IN_YOUR_SSH_PUBLIC_KEY
+      - DATASETS=/datasets # these are only changing the config of the docker container
+      - CLOUDSDK_CONFIG=/credentials/gcloud
+    user: "1000:1000" # this fixes some issues with running docker as root, remove if it causes problems
+
+volumes:
+  cloud_config:
+    driver: local

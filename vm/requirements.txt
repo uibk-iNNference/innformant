@@ -1,0 +1,5 @@
+# these are the requirements (in addition to tensorflow+dependencies) needed for the vm
+tensorflow-datasets
+google-cloud-storage
+prettytable
+werkzeug
